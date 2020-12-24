@@ -15,7 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.http import HttpResponse
+
+from . import test
+
+def index_endpoint(request):
+    return HttpResponse("Yup! Working!")
 
 urlpatterns = [
+    path('', index_endpoint, name='index'),
+    path('test/', test.test_endpoint, name='test'),
     path('admin/', admin.site.urls),
 ]
