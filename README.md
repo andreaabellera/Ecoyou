@@ -51,5 +51,5 @@ Then start the dev server for the react project
 npm run start
 ```
 
-And if you have the backend running at the same time, the react app will ask the backend for the current time (as test) and show it to the user.
+And if you have the backend running at the same time, the react app will ask the backend for the current time (as test) and show it to the user.  
 And a message like this will be shown: "The django backend said the current time is: 2020-12-23 22:45:42.729013".
