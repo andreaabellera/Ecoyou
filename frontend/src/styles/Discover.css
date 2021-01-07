@@ -1,0 +1,82 @@
+.discover-container
+{
+    display: flex;
+    height: auto;
+    flex-grow: 1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.discover-container .challenges
+{
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    position: relative;
+    margin-left: auto;
+    height: 100%;
+    width: 400px;
+
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.discover-container .challenges .item-inds
+{
+    margin-top: 20px;
+
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-right: 20%;
+    margin-left: 20%;
+
+    font-size: 1.5rem;
+}
+
+.discover-container .challenges .title
+{
+    color: #f7ffc3;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2rem;
+
+    text-align: center;
+}
+
+.discover-container .challenges .body
+{
+    margin-top: 20px;
+    color: white;
+    margin-right: 20%;
+    margin-left: 20%;
+    word-wrap: break-word;
+    font-size: 1.1rem;
+
+    text-align: center;
+}
+
+.discover-container .challenges .buttons
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+
+    margin-bottom: 20px;
+}
+
+.discover-container .challenges .buttons button
+{
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

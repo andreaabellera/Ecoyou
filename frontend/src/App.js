@@ -2,6 +2,17 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import Header from "./components/Header";
+
+import Discover from "./components/Discover";
+import Redeem from "./components/Redeem";
+import Challenges from "./components/Challenges";
+import Me from "./components/Me";
+
+import { 
+  BrowserRouter, Link, Route, Switch, useLocation, Redirect
+} from "react-router-dom";
+
 function App() {
   let [backendMessage, setBackendMessage] = React.useState("");
 
@@ -17,17 +28,30 @@ function App() {
     {
       alert(`error: ${errResponse}`);
     });
-  }
-  ,[]);
+  } ,[]);
 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          The django backend said the current time is: {backendMessage}
-        </p>
-      </header>
+    <Header />
+      <Switch>
+        
+        <Route path="/discover">
+          <Discover />
+        </Route>
+        <Route path="/redeem">
+          <Redeem />
+        </Route>
+        <Route path="/challenges">
+          <Challenges />
+        </Route>
+        <Route path="/me">
+          <Me />
+        </Route>
+        
+        <Route path='/' render={() => (
+            <Redirect to="/discover" />
+        )}/>
+      </Switch>
     </div>
   );
 }
