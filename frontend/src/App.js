@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 import Header from "./components/Header";
@@ -38,16 +37,19 @@ function App() {
         <Route path="/discover">
           <Discover />
         </Route>
+
         <Route path="/redeem">
           <Redeem />
         </Route>
+
         <Route path="/challenges">
           <Challenges />
         </Route>
+
         <Route path="/me">
           <Me />
         </Route>
-        
+
         <Route path='/' render={() => (
             <Redirect to="/discover" />
         )}/>
