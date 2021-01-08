@@ -2,6 +2,8 @@ import React from "react";
 
 import "../styles/Discover.css";
 
+import config from "../config";
+
 import BookmarkIcon from '@material-ui/icons/Bookmark';
 
 import Button from '@material-ui/core/Button';
@@ -13,16 +15,7 @@ import backgroundImg from "../resources/bg/unsplash-wildfire-1.jpg"
 
 function Discover()
 {
-    const [listOfItems, setListOfItems] = React.useState([
-        {
-            title: "Amazon forest fires",
-            body: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-        },
-        {
-            title: "HMMMMM",
-            body: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-        }
-    ]);
+    const [listOfItems, setListOfItems] = React.useState([]);
     const [currentItemInd, setCurrentItemInd] = React.useState(0);
 
     const currentItem = listOfItems[currentItemInd];
@@ -43,13 +36,16 @@ function Discover()
 
     React.useState(() => 
     {
-        /*
-         * Has to load discover items into listOfItems here
-         * (when the backend is ready)
-         */
+        console.log(config.api + "/issues/all");
+        fetch(config.api + "/issues/all")
+        .then(res => res.json())
+        .then(listOfItemsResponse => 
+        {
+            setListOfItems(listOfItemsResponse.results);
+        })
     }, []);
 
-    return <div class="discover-container" 
+    return <div className="discover-container" 
         style={{ backgroundImage: `url(${backgroundImg})` }}
     >
         <div className="challenges">
@@ -59,10 +55,10 @@ function Discover()
                 <ChevronRightIcon style={{ fontSize: 40 }} onClick={() => addToItemInd(1)}/>
             </div>
             <div className="title">
-                { currentItem.title }
+                { currentItem && currentItem.name }
             </div>
             <div className="body">
-                { currentItem.body }
+                { currentItem && currentItem.description }
             </div>
             <div className="buttons">
                 <Button variant="contained" color="default">

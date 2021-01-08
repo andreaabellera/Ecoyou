@@ -1,0 +1,50 @@
+[
+    {
+        "model": "core.Issue",
+        "pk": 1,
+        "fields": {
+            "name": "Texas swarmed with 40000 bees",
+            "description": "Honey bees — wild and domestic — perform about 80 percent of all pollination worldwide. A single bee colony can pollinate 300 million flowers each day. Grains are primarily pollinated by the wind, but fruits, nuts and vegetables are pollinated by bees. Seventy out of the top 100 human food crops — which supply about 90 percent of the world’s nutrition — are pollinated by bees."
+        }
+    },
+    {
+        "model": "core.Issue",
+        "pk": 2,
+        "fields": {
+            "name": "Australian Bush fires",
+            "description": "As of 9 March 2020, the fires burnt an estimated 18.6 million hectares (46 million acres; 186,000 square kilometres; 72,000 square miles), destroyed over 5,900 buildings (including 2,779 homes) and killed at least 34 people. Nearly three billion terrestrial vertebrates alone – the vast majority being reptiles – were affected and some endangered species were believed to be driven to extinction. At its peak, air quality dropped to hazardous levels in all southern and eastern states."
+        }
+    },
+    {
+        "model": "core.Issue",
+        "pk": 3,
+        "fields": {
+            "name": "Floods in indonesia",
+            "description": "Floods and landslides have affected wide areas of Indonesia since 07 October, 2020. At least 3 people have lost their lives. Homes have been damaged or destroyed and hundreds of people displaced."
+        }
+    },
+    {
+        "model": "core.Issue",
+        "pk": 4,
+        "fields": {
+            "name": "Canada's last ice shelf collapses due to global warming",
+            "description": "The collapse of Canada’s Milne ice shelf — the country’s last one — in a corner of the country’s Ellesmere Island, has increased fears of the Arctic region being under severe stress due to global warming."
+        }
+    },
+    {
+        "model": "core.Issue",
+        "pk": 5,
+        "fields": {
+            "name": "Volcano eruption in philippines",
+            "description": "Happened in Taal (a volcano within a volcano) on January 12, 2020. A significant addition of sulfur dioxide(from the explosion) into the atmosphere could cause a short-term global cooling effect by reflecting solar radiation. In addition to that, Volcanic eruptions of this size and scope can affect global climate by reducing tropospheric temperatures, decreasing the amount of solar radiation hitting Earth’s surface, and altering circulation patterns in the atmosphere"
+        }
+    },
+    {
+        "model": "core.Issue",
+        "pk": 7,
+        "fields": {
+            "name": "Gas plant explosion in Lagos",
+            "description": "Lagos, Nigeria had a gas explosion in March which killed at least 15 people and destroyed around 50 buildings. The Nigerian National Petroleum Corporation (NNPC) said the explosion was triggered after a truck hit some gas cylinders stacked in a gas processing plant near the corporation’s pipeline in Abule Ado area of Lagos state. "
+        }
+    }
+]

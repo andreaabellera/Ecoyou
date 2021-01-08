@@ -38,7 +38,3 @@ class User(models.Model):
     goals = models.ManyToManyField(Challenge)
     friends = models.ManyToManyField('self')
     badges = models.ManyToManyField(Badge)
-
-
-
-
