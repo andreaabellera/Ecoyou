@@ -56,12 +56,13 @@
 {
     margin-top: 20px;
     color: white;
-    margin-right: 20%;
-    margin-left: 20%;
+    margin-right: 10%;
+    margin-left: 10%;
     word-wrap: break-word;
     font-size: 1.1rem;
-
     text-align: center;
+    overflow: auto;
+    max-height: 30%;
 }
 
 .discover-container .challenges .buttons
