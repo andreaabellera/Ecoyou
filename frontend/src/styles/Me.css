@@ -1,0 +1,37 @@
+.me-container
+{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    flex-grow: 1;
+}
+
+.me-container .top-container 
+{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.me-container .bottom-container 
+{
+    background-color: blue;
+    flex-grow: 1;
+}
+
+.me-container .goals-container
+{
+    width: 250px;
+    margin: 50px;
+    height: fit-content;
+}
+
+.me-container .goals-container > nav > div:first-child
+{
+    background-color: #ece28a;
+}
+
+.me-container .goals-container > nav > div:not(:first-child)
+{
+    background-color: #fbf5c4;
+}

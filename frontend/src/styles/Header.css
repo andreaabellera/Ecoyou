@@ -2,7 +2,7 @@ header
 {
   display: flex;
   width: 100%;
-  height: 75px;
+  height: 150px;
   background-color: #563b1d;
   align-items: center;
   justify-content: space-around;
@@ -20,9 +20,42 @@ header .header-item
 
   font-size: 1.5rem;
   font-family: 'Concert One', cursive;
+
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
 }
 
 header .header-item.active
 {
   border-bottom: solid 5px #aebf9b;
+}
+
+header .tab-icon
+{
+  width: 80px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  height: auto;
+}
+
+header .logo-container
+{
+  display: flex;
+  flex-direction: column;
+}
+
+header .logo-container .header-logo
+{
+  max-width: 200px;
+}
+
+header .logo-container span
+{
+  color: #9dd57c;
+  font-weight: 400;
+  font-family: 'Concert One', cursive;
+  text-align: center;
 }
