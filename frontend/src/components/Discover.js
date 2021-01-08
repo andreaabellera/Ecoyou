@@ -41,7 +41,6 @@ function Discover()
         .then(res => res.json())
         .then(listOfItemsResponse => 
         {
-            console.log(listOfItemsResponse);
             setListOfItems(listOfItemsResponse.results);
         })
     }, []);
