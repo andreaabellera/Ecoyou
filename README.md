@@ -1,12 +1,14 @@
 # environment-webapp
 
+# Setting it up
+
 To begin, clone the repository (to whatever folder you prefer, I usually put them into the documents folder), and enter the cloned folder.
 ```bash
 git clone https://github.com/Marshmallows7920/environment-webapp/
 cd environment-webapp
 ```
 
-## Configre and run the backend - Python/Django
+## Configure and run the backend - Python/Django
 Make sure you have python installed from [https://www.python.org/downloads/](https://www.python.org/downloads/).  
 I used python 3.8.4 but newers versions should probably be fine too.
 
@@ -51,5 +53,4 @@ Then start the dev server for the react project
 npm run start
 ```
 
-And if you have the backend running at the same time, the react app will ask the backend for the current time (as test) and show it to the user.  
-And a message like this will be shown: "The django backend said the current time is: 2020-12-23 22:45:42.729013".
+And if you have the backend running at the same time, the react app.
