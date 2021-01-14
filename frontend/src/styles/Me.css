@@ -9,12 +9,14 @@
     display: grid;
     height:100%;
     width:100%;
-    grid-template-rows: 65% 1fr;
+    grid-template-rows: 75% 1fr;
 }
 
 .top-container 
 {
     background-image: url("../resources/bg/yellow-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     display: grid;
     grid-template-columns: 20% 80%;
 }
@@ -43,7 +45,12 @@
 .profile-container {
     margin: 2.5%;
     display: grid;
-    grid-template-rows: 65% 35%;
+    grid-template-rows: 55% 5% 40%;
+}
+
+.profile-name{
+    color: slategrey;
+    justify-self: center;
 }
 
 .profile-pic{
@@ -53,36 +60,65 @@
     align-self: center;
     border-radius: 1em;
     border-style: solid;
-    border-color: #c6b100;
+    border-color: #babced;
     border-width: thick;
     background-size: cover; 
     background-repeat:none;
 }
 
 .friend-container{
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-bottom: 1%;
+    margin: 3.5% 1% 1% 1%;
     display:grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-columns: 16% 14% 14% 14% 14% 14% 14%;
+    grid-template-rows: 1fr auto;
+    background-color: #babced;
+    font-family: 'Concert One', cursive;
+    text-align: center;
+    border-color: #ece28a;
+    padding: 1%;
+    border-width: thick;
+    border-style: solid;
+    border-radius: 1em;
+}
+
+.friend-name{
+    color: olive;
+    font-family: 'Concert One', cursive;
+    justify-self: center;
+    align-self: center;
+    font-size: large;
+}
+
+.add-friend{
+    color: olive;
+    font-family: 'Hepta Slab', serif;
+    justify-self: center;
+    align-self: center;
+    font-size: medium;
+}
+
+.my-friends{
+    color: slategrey;
+    font-family: 'Concert One', cursive;
+    text-align: center;
+    font-size: 1.8em;
+    grid-row: 1/3;
+    justify-self: center;
+    align-self: center;
 }
 
 .friend-pic{
-    margin: 5%;
-    background-size: cover; 
-    background-repeat:none;
-    text-align: center;
-    padding-top: 30%;
-    font-family: 'Concert One', cursive;
-    color: darkolivegreen;
+    background-size: contain; 
+    background-repeat:no-repeat;
+    background-position-x: center;
 }
 
 .badge-title{
-    background-color: #c6b100;
-    color: lightgoldenrodyellow;
+    background-color: #ece28a;
+    color: darkolivegreen;
     text-align: center;
-    font-size: 2em;
-    padding: 1%;
+    font-size: 1.5em;
+    padding: 0.5%;
 }
 
 .badge-container{

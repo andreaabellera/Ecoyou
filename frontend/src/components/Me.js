@@ -8,6 +8,7 @@ import Divider from '@material-ui/core/Divider';
 import ListSubheader from '@material-ui/core/ListSubheader';
 import InboxIcon from '@material-ui/icons/Inbox';
 import DraftsIcon from '@material-ui/icons/Drafts';
+import AddIcon from '@material-ui/icons/AddCircleOutline';
 
 import "../styles/Me.css";
 import defender from "../resources/badge_defender.png";
@@ -15,6 +16,12 @@ import recycler from "../resources/badge_recycler.png";
 import yellowbg from "../resources/bg/yellow-bg.jpg";
 import friendicon from "../resources/header-me.png";
 import cutesloth from "../resources/sloth.png";
+
+import croco from "../resources/ecoyou_croco.png";
+import bat from "../resources/ecoyou_bat.png";
+import blobfish from "../resources/ecoyou_blobfish.png";
+import duck from "../resources/ecoyou_duck.png";
+import cub from "../resources/ecoyou_cub.png";
 
 function Me() 
 {
@@ -49,12 +56,21 @@ function Me()
 
                 <div className="profile-container">
                     <div className="profile-pic" style={{ backgroundImage: `url(${cutesloth})` }}></div>
+                    <div className="profile-name">Signed in as Guest</div>
                     <div className="friend-container">
-                        <div className="friend-pic" style={{ backgroundImage: `url(${friendicon})` }}>Isham</div>
-                        <div className="friend-pic" style={{ backgroundImage: `url(${friendicon})` }}>Yashas</div>
-                        <div className="friend-pic" style={{ backgroundImage: `url(${friendicon})` }}>Mohsen</div>
-                        <div className="friend-pic" style={{ backgroundImage: `url(${friendicon})` }}>Kunal</div>
-                        <div className="friend-pic" style={{ backgroundImage: `url(${friendicon})` }}>Andrea</div>
+                        <div className="my-friends">MY FRIENDS</div>
+                        <div className="friend-pic" style={{ backgroundImage: `url(${cub})` }}></div>
+                        <div className="friend-pic" style={{ backgroundImage: `url(${croco})` }}></div>
+                        <div className="friend-pic" style={{ backgroundImage: `url(${duck})` }}></div>
+                        <div className="friend-pic" style={{ backgroundImage: `url(${blobfish})` }}></div>
+                        <div className="friend-pic" style={{ backgroundImage: `url(${bat})` }}></div>
+                        <div className="friend-name"> <AddIcon /> </div>
+                        <div className="friend-name">Isham</div>
+                        <div className="friend-name">Yashas</div>
+                        <div className="friend-name">Mohsen</div>
+                        <div className="friend-name">Kunal</div>
+                        <div className="friend-name">Andrea</div>
+                        <div className="add-friend">add new</div>
                     </div>
                 </div>
 
