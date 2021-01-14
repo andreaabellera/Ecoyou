@@ -1,4 +1,9 @@
-# environment-webapp
+# Ecoyou
+This project is a fork of our entry for Hackacomm 2021. This cantankerous kid needs to play more with the Django and React without wrecking our original model apart. If things go well, the following may happen:
+- UI revamp ensues
+- A Redeem page appears
+- Backend data gets integrated for displaying information in User profile, Challenges, etc.
+
 
 # Setting it up
 
