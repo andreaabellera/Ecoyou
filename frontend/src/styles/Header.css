@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css2?family=Concert+One&display=swap);
+
 header{
   width: 100%;
   display: flex;
@@ -22,7 +24,7 @@ header{
   color: #ffff99;
   transition: all 0.3s;
   text-decoration: none;
-  font-size: medium;
+  font-size: large;
   font-family: 'Concert One', cursive;
   display: flex;
   flex-direction: column;
@@ -35,12 +37,12 @@ header img{
 }
 
 .header-item:hover{
-  color: white;
+  color: #73731d;
 }
 
 .header-item.active
 {
-  color: #73731d;
+  color: aquamarine;
 }
 
 .header-ornament{

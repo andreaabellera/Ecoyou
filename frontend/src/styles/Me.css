@@ -1,146 +1,17 @@
-@import url(https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@500&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Concert+One&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Rokkitt:wght@200;400;500;700;800;900&family=Yusei+Magic&display=swap);
+
 *{
     font-family: 'Hepta Slab', serif;
+    color: #003399;
 }
 
-.me-container
-{
-    display: grid;
-    height:100%;
-    width:100%;
-    grid-template-rows: 75% 1fr;
-}
-
-.top-container 
-{
-    background-image: url("../resources/bg/yellow-bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: grid;
-    grid-template-columns: 20% 80%;
-}
-
-.bottom-container 
-{
-    background-color: #babced;
-}
-
-.goals-container
-{
-    margin: 10%;
-    background-color: #babced;
-}
-
-.me-container .goals-container > nav > div:first-child
-{
-    background-color: #ece28a;
-}
-
-.me-container .goals-container > nav > div:not(:first-child)
-{
-    background-color: #fbf5c4;
-}
-
-.profile-container {
-    margin: 2.5%;
-    display: grid;
-    grid-template-rows: 55% 5% 40%;
-}
-
-.profile-name{
-    color: slategrey;
-    justify-self: center;
-}
-
-.profile-pic{
-    height: 70%;
-    width: 20%;
-    justify-self: center;
-    align-self: center;
-    border-radius: 1em;
-    border-style: solid;
-    border-color: #babced;
-    border-width: thick;
-    background-size: cover; 
-    background-repeat:none;
-}
-
-.friend-container{
-    margin: 3.5% 1% 1% 1%;
-    display:grid;
-    grid-template-columns: 16% 14% 14% 14% 14% 14% 14%;
-    grid-template-rows: 1fr auto;
-    background-color: #babced;
+.username{
     font-family: 'Concert One', cursive;
-    text-align: center;
-    border-color: #ece28a;
-    padding: 1%;
-    border-width: thick;
-    border-style: solid;
-    border-radius: 1em;
 }
 
-.friend-name{
-    color: olive;
-    font-family: 'Concert One', cursive;
-    justify-self: center;
-    align-self: center;
+.rank-title{
+    font-family: 'Rokkitt', serif;
+    font-weight: 700;
     font-size: large;
-}
-
-.add-friend{
-    color: olive;
-    font-family: 'Hepta Slab', serif;
-    justify-self: center;
-    align-self: center;
-    font-size: medium;
-}
-
-.my-friends{
-    color: slategrey;
-    font-family: 'Concert One', cursive;
-    text-align: center;
-    font-size: 1.8em;
-    grid-row: 1/3;
-    justify-self: center;
-    align-self: center;
-}
-
-.friend-pic{
-    background-size: contain; 
-    background-repeat:no-repeat;
-    background-position-x: center;
-}
-
-.badge-title{
-    background-color: #ece28a;
-    color: darkolivegreen;
-    text-align: center;
-    font-size: 1.5em;
-    padding: 0.5%;
-}
-
-.badge-container{
-    background-color: #babced;
-    display: grid;
-    margin-bottom: 1%;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-}
-
-.badge{
-    justify-self: center;
-    height: 10em;
-    width: 10em;
-    margin: 5%;
-    background-size: cover; 
-    background-repeat:none;
-}
-
-.stats{
-    background-color: lightgoldenrodyellow;
-    color: darkolivegreen;
-    display:grid;
-    grid-template-columns: 1fr 33% 1fr;
-    justify-items: center;
 }
