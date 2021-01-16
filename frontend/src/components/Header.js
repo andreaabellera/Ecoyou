@@ -30,7 +30,7 @@ function Header()
 
     React.useEffect(() =>
     {
-        document.title = "Ecoyou";
+        
     }, [location]);
 
     return (

@@ -2,9 +2,9 @@ import React from 'react';
 import './App.css';
 
 import Header from "./components/Header";
-
 import Discover from "./components/Discover";
 import Redeem from "./components/Redeem";
+import About from "./components/About";
 import Challenges from "./components/Challenges";
 import Me from "./components/Me";
 
@@ -40,6 +40,10 @@ function App() {
 
         <Route path="/redeem">
           <Redeem />
+        </Route>
+
+        <Route path="/about">
+          <About />
         </Route>
 
         <Route path="/challenges">

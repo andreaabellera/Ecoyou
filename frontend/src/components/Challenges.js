@@ -7,7 +7,9 @@ import Button from '@material-ui/core/Button';
 
 function Challenges() 
 {
-
+    React.useState(() => {
+      document.title = "Ecoyou - Challenges";
+    }, []);
     return (
         <div className="c1" style={{ backgroundImage: `url(${backgroundImg})` }}> 
             <div className= "p1"> <strong>Monthly Challenge: Help Make Reusable Masks</strong></div>

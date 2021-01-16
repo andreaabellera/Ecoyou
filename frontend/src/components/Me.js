@@ -12,7 +12,10 @@ import cub from "../resources/ecoyou_cub.png";
 
 function Me() 
 {
-    let [userData, setUserData] = React.useState();
+    React.useState(() => {
+        document.title = "Ecoyou - Me";
+    }, []);
+    // let [userData, setUserData] = React.useState();
     return (
         <div className="me-container">
             <div className="profile-container">

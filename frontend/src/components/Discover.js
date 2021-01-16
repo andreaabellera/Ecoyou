@@ -36,6 +36,7 @@ function Discover()
 
     React.useState(() => 
     {
+        document.title = "Ecoyou - Discover";
         console.log(config.api + "/issues/all");
         fetch(config.api + "/issues/all")
         .then(res => res.json())
