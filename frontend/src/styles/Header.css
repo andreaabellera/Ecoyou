@@ -21,7 +21,20 @@ header{
 
 .header-item
 {
-  color: #ffff99;
+  color: lightgoldenrodyellow;
+  transition: all 0.3s;
+  text-decoration: none;
+  font-size: medium;
+  font-family: 'Concert One', cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:60%;
+}
+
+.logo-item
+{
+  color: lightgoldenrodyellow;
   transition: all 0.3s;
   text-decoration: none;
   font-size: large;
@@ -31,18 +44,32 @@ header{
   align-items: center;
 }
 
+.logo-item.active{
+  border-left-color: #ffff99;
+  border-left-style: groove;
+  border-right-color: #ffff99;
+  border-right-style: groove;
+  border-radius: 2em;
+  border-width: thick;
+}
+
 header img{
   height: 20%;
   width: 20%;
 }
 
-.header-item:hover{
-  color: #73731d;
-}
-
 .header-item.active
 {
-  color: aquamarine;
+  font-size: large;
+  width:90%;
+}
+
+.header-item:hover{
+  opacity:80%;
+}
+
+.logo-item:hover{
+  opacity:80%;
 }
 
 .header-ornament{

@@ -4,7 +4,8 @@ import "../styles/Header.css";
 
 import HeaderBase from "../resources/header_base.png";
 import HeaderOrnament from "../resources/header_ornament.png";
-import EcoyouLogo from "../resources/ecoyou.png";
+import EcoyouIcon from "../resources/ecoyou.png";
+import EcoyouSelected from "../resources/ecoyou_selected.png";
 import HeaderDiscoverIcon from "../resources/header_discover.png";
 import HeaderRedeemIcon from "../resources/header_redeem.png";
 import HeaderChallengesIcon from "../resources/header_challenges.png";
@@ -50,9 +51,9 @@ function Header()
                     </NavLink>
                 </div>
 
-                <div className = "header-item">
-                    <NavLink to="/about" className="header-item" activeClassName="active">
-                        <img src={EcoyouLogo} />
+                <div>
+                    <NavLink to="/about" className="logo-item" activeClassName="active">
+                        <img src={EcoyouIcon} />
                         The change starts with you
                     </NavLink>
                 </div>
