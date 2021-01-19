@@ -19,15 +19,19 @@ function Me()
     return (
         <div className="me-container">
             <div className="profile-container">
-              <img src={croco} height="10%" width="10%"></img>
+              <div className="profile-pic" style={{ backgroundImage: `url(${croco})` }}></div>
               <div className = "username"> Ecoyou dummy </div>
               <div className = "rank-title"> Rank 1: Croc Hero </div>
             </div>
             <div className="friend-container">
-
+                <hr></hr>
+                FRIENDS
+                <hr></hr>
             </div>
             <div className="badge-container">
-
+                <hr></hr>
+                BADGES
+                <hr></hr>
             </div>
         </div>
     );
